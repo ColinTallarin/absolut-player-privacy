@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad para Absolutons Player</title>
+    <style>
+        :root {
+            --bg-color: #0f1115;
+            --card-bg: #181b21;
+            --text-main: #e6e8ec;
+            --text-muted: #a0a6b1;
+            --accent: #4f8cff;
+            --border: #2a2f3a;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.7;
+            padding: 2rem 1rem;
+        }
+        .container {
+            max-width: 840px;
+            margin: 0 auto;
+            background-color: var(--card-bg);
+            padding: 2.5rem;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+        }
+        h1 {
+            font-size: 1.9rem;
+            margin-bottom: 0.5rem;
+            color: #ffffff;
+        }
+        .meta {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border);
+        }
+        h2 {
+            font-size: 1.3rem;
+            margin-top: 2rem;
+            margin-bottom: 0.8rem;
+            color: var(--accent);
+        }
+        h3 {
+            font-size: 1.05rem;
+            margin-top: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: #ffffff;
+        }
+        p {
+            margin-bottom: 1rem;
+            color: var(--text-main);
+        }
+        ul, ol {
+            margin-left: 1.5rem;
+            margin-bottom: 1.2rem;
+        }
+        li {
+            margin-bottom: 0.6rem;
+        }
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .box {
+            background-color: rgba(79, 140, 255, 0.08);
+            border-left: 4px solid var(--accent);
+            padding: 1rem 1.2rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        footer {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Política de Privacidad de Absolutons Player</h1>
+        <div class="meta">
+            <strong>Última actualización:</strong> [FECHA] &nbsp;|&nbsp; <strong>Desarrollador:</strong> TallarinDev
+        </div>
+
+        <p>La presente Política de Privacidad describe de manera transparente cómo <strong>Absolutons Player</strong> ("nosotros", "nuestro" o "el Desarrollador") recopila, utiliza, procesa, almacena y protege la información relacionada con el uso de la aplicación móvil</strong> (en adelante, "la Aplicación").</p>
+
+        <p>Nos comprometemos a respetar la privacidad de nuestros usuarios y a cumplir estrictamente con las Políticas del Programa para Desarrolladores de Google Play, así como con las normativas aplicables de protección de datos personales. Al descargar, instalar, acceder o utilizar la Aplicación, declaras haber leído, comprendido y aceptado las prácticas descritas en este documento.</p>
+
+        <div class="box">
+            <strong>Resumen ejecutivo de privacidad:</strong> Absolutons Player funciona completamente sin cuentas de usuario ni registro previo. Tus archivos de audio permanecen estrictamente en tu dispositivo y nunca se suben a ningún servidor. Solo se procesan datos técnicos mínimos necesarios para descargar letras/carátulas, mostrar publicidad en la versión gratuita y validar compras integradas.
+        </div>
+
+        <h2>1. Ausencia de Cuentas de Usuario y Datos Personales Directos</h2>
+        <p><strong>Absolutons Player</strong> ha sido diseñada bajo un principio de minimización de datos. La Aplicación no requiere ni ofrece mecanismos para crear cuentas de usuario, iniciar sesión mediante correo electrónico, redes sociales o autenticación externa.</p>
+        <p>En consecuencia, <strong>no solicitamos, recopilamos ni almacenamos en servidores propios</strong> información de identificación personal directa, tales como:</p>
+        <ul>
+            <li>Nombre completo, alias o fotografías de perfil.</li>
+            <li>Direcciones de correo electrónico o números de teléfono.</li>
+            <li>Contraseñas, credenciales de acceso o datos biométricos.</li>
+            <li>Ubicación GPS precisa en tiempo real, contactos o calendario.</li>
+        </ul>
+
+        <h2>2. Información Procesada y Recopilada por la Aplicación y SDKs</h2>
+        <p>Para ofrecer las funciones principales de reproducción multimedia, enriquecimiento de metadatos y sostenibilidad económica mediante un modelo <em>freemium</em>, la Aplicación y los kits de desarrollo de software (SDKs) de terceros integrados en ella procesan las siguientes categorías de información:</p>
+
+        <h3>2.1. Acceso Local a Archivos de Audio y Procesamiento DSP</h3>
+        <p>La Aplicación solicita permisos de lectura sobre el almacenamiento multimedia del dispositivo (<code>READ_MEDIA_AUDIO</code> o <code>READ_EXTERNAL_STORAGE</code> según la versión de Android) exclusivamente con el fin de indexar, organizar y reproducir tus archivos de música locales (como formatos FLAC, MP3, M4A, WAV u OGG).</p>
+        <p>Todo el procesamiento de señal digital (DSP), ecualización paramétrica, ajustes de tono (<em>pitch</em>), velocidad de reproducción, reverberación y generación de ondas visuales ocurre <strong>100% de manera local en el procesador de tu dispositivo</strong>. Ningún archivo de audio es copiado, transmitido ni almacenado en servidores externos.</p>
+
+        <h3>2.2. Consultas Automatizadas de Metadatos y Letras Sincronizadas</h3>
+        <p>Cuando utilizas las funciones de búsqueda o autocompletado de información musical, la Aplicación envía consultas técnicas automatizadas (conteniendo únicamente cadenas de texto como el título de la pista, nombre del álbum, artista o duración) a servicios públicos y APIs de terceros:</p>
+        <ul>
+            <li><strong>Deezer API y iTunes Search API:</strong> Utilizadas para obtener portadas de álbumes en alta resolución y metadatos descriptivos.</li>
+            <li><strong>LRCLIB:</strong> Utilizada para consultar y descargar archivos de letras sincronizadas (<code>.lrc</code>).</li>
+        </ul>
+        <p>Estas solicitudes se envían sin adjuntar identificadores personales ni información de tu cuenta de Google, y los resultados descargados se almacenan en la memoria caché local de tu teléfono para reducir el consumo de datos futuros.</p>
+
+        <h3>2.3. Identificadores del Dispositivo y Ubicación Aproximada (Publicidad)</h3>
+        <p>En su modalidad gratuita, <strong>[NOMBRE DE LA APP]</strong> integra <strong>Google AdMob</strong> para mostrar anuncios publicitarios (banners y anuncios intersticiales). Para operar, el SDK de AdMob recopila y comparte automáticamente con Google y sus socios publicitarios certificados:</p>
+        <ul>
+            <li><strong>ID de publicidad de Android (AAID) y otros identificadores del dispositivo:</strong> Utilizados para limitar la frecuencia de los anuncios, personalizar su relevancia, atribuir conversiones y detectar tráfico no válido.</li>
+            <li><strong>Ubicación aproximada:</strong> Inferida únicamente a partir de la dirección IP de conexión (a nivel de ciudad o región, nunca coordenadas GPS exactas) para mostrar publicidad adecuada al idioma y región geográfica del usuario.</li>
+        </ul>
+
+        <h3>2.4. Información de la App, Registros de Fallos y Diagnósticos</h3>
+        <p>Para garantizar la estabilidad del reproductor en distintos modelos de dispositivos Android y versiones del sistema operativo, los servicios integrados (incluyendo Google Play Services y AdMob) recopilan datos técnicos de rendimiento, tales como:</p>
+        <ul>
+            <li><strong>Registros de fallos (<em>Crash logs</em>):</strong> Trazas técnicas anónimas generadas si la Aplicación sufre un cierre inesperado.</li>
+            <li><strong>Diagnósticos e interacciones:</strong> Métricas sobre tiempos de inicio, latencia de carga de anuncios, modelo de dispositivo, versión de Android e interacciones con los bloques publicitarios.</li>
+        </ul>
+
+        <h3>2.5. Historial de Compras Integradas</h3>
+        <p><strong>Absolutons Player</strong> ofrece una compra integrada única opcional para eliminar permanentemente la publicidad. Todo el flujo de pago, facturación y procesamiento financiero es gestionado de forma exclusiva y segura por <strong>Google Play Billing</strong>.</p>
+        <p>El Desarrollador <strong>nunca tiene acceso</strong> a tus números de tarjeta de crédito/débito, cuentas bancarias ni datos de facturación. La Aplicación únicamente consulta el <strong>historial y estado de compra</strong> proporcionado por Google Play para verificar si la licencia sin anuncios está activa en tu cuenta y restaurarla en caso de reinstalación.</p>
+
+        <h2>3. Finalidades Específicas del Tratamiento de Datos</h2>
+        <p>De conformidad con la sección de Seguridad de los Datos de Google Play, toda la información procesada se destina exclusivamente a las siguientes finalidades:</p>
+        <ol>
+            <li><strong>Funcionalidad de la aplicación:</strong> Reproducir audio local, aplicar efectos de sonido, descargar letras y carátulas, y verificar el estado de compra para desactivar los anuncios.</li>
+            <li><strong>Publicidad y marketing:</strong> Financiar el desarrollo y mantenimiento gratuito de la Aplicación mediante la exhibición de anuncios a través de Google AdMob.</li>
+            <li><strong>Análisis y mejora del rendimiento:</strong> Identificar errores de código, optimizar el consumo de batería/memoria y supervisar el rendimiento técnico de los anuncios.</li>
+            <li><strong>Prevención de fraudes, seguridad y cumplimiento:</strong> Detectar usos abusivos, proteger la integridad de las transacciones de Google Play Billing y prevenir clics o impresiones fraudulentas en la red publicitaria.</li>
+        </ol>
+
+        <h2>4. Seguridad, Cifrado y Retención de Datos</h2>
+        <p>La seguridad de tu información es prioritaria. Todas las comunicaciones de red realizadas por la Aplicación hacia los servidores de Google AdMob, Google Play Billing, Deezer, iTunes y LRCLIB se transmiten protegidas mediante protocolos estándar de <strong>cifrado en tránsito (HTTPS / TLS)</strong>.</p>
+        <p><strong>Retención y almacenamiento:</strong> El Desarrollador no mantiene bases de datos propias con información de los usuarios. Los datos almacenados localmente por la Aplicación (preferencias de ecualización, listas de reproducción, caché de carátulas y letras) permanecen exclusivamente en la memoria interna de tu dispositivo hasta que decidas borrarlos. Los datos técnicos procesados por Google AdMob y Google Play se rigen por las políticas de retención de Google LLC.</p>
+
+        <h2>5. Proveedores y Servicios de Terceros</h2>
+        <p>La Aplicación utiliza servicios de terceros que pueden recopilar información utilizada para identificarte técnicamente según sus propias políticas de privacidad, las cuales recomendamos revisar:</p>
+        <ul>
+            <li><strong>Google Play Services y Google Play Billing:</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></li>
+            <li><strong>Google AdMob (y socios publicitarios de Google):</strong> <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">https://support.google.com/admob/answer/6128543</a></li>
+            <li><strong>Deezer API:</strong> <a href="https://www.deezer.com/legal/personal-datas" target="_blank" rel="noopener">https://www.deezer.com/legal/personal-datas</a></li>
+            <li><strong>Apple / iTunes Search API:</strong> <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">https://www.apple.com/legal/privacy/</a></li>
+            <li><strong>LRCLIB:</strong> Servicio abierto de consulta de letras sincronizadas sin registro de identidad.</li>
+        </ul>
+
+        <h2>6. Derechos del Usuario y Control sobre tu Privacidad</h2>
+        <p>Tienes control total sobre los datos procesados en tu dispositivo y puedes ejercer las siguientes opciones en cualquier momento:</p>
+        <ul>
+            <li><strong>Gestión y restablecimiento del ID de publicidad:</strong> Puedes restablecer tu identificador de publicidad o inhabilitar la personalización de anuncios desde los ajustes del sistema operativo en <em>Ajustes &gt; Google &gt; Anuncios</em> (o <em>Privacidad &gt; Anuncios</em>).</li>
+            <li><strong>Desactivación total de publicidad:</strong> Mediante la compra integrada dentro de la Aplicación, el módulo de anuncios se desactiva por completo, deteniendo las solicitudes de publicidad a AdMob.</li>
+            <li><strong>Revocación de permisos de almacenamiento:</strong> Puedes revocar el acceso a los archivos de audio en cualquier momento desde <em>Ajustes &gt; Aplicaciones &gt; Absolutons Player &gt; Permisos</em>.</li>
+            <li><strong>Eliminación completa de datos locales:</strong> Puedes borrar todo rastro local de la Aplicación seleccionando <em>Borrar datos / Borrar almacenamiento</em> en los ajustes de Android o desinstalando la Aplicación de tu dispositivo.</li>
+        </ul>
+
+        <h2>7. Privacidad de Menores de Edad</h2>
+        <p><strong>Absolutons Player</strong> está orientada a un público general mayor de 13 años y no está dirigida ni diseñada para niños menores de 13 años (ni por debajo de la edad mínima de consentimiento digital aplicable en tu jurisdicción). No recopilamos consciente ni intencionadamente datos personales de menores de edad. Si eres padre, madre o tutor y consideras que un menor ha proporcionado información de alguna manera, contáctanos para tomar las medidas oportunas.</p>
+
+        <h2>8. Propiedad Intelectual y Contenido del Usuario</h2>
+        <p><strong>Absolutons Player</strong> es únicamente una herramienta de reproducción y organización multimedia local. La Aplicación no aloja, distribuye ni proporciona descargas de archivos de audio protegidos por derechos de autor. El usuario es el único responsable de contar con los derechos legales sobre los archivos musicales almacenados en su dispositivo. Las carátulas y letras obtenidas a través de las APIs externas pertenecen a sus respectivos titulares de derechos de autor.</p>
+
+        <h2>9. Modificaciones a esta Política de Privacidad</h2>
+        <p>Nos reservamos el derecho de actualizar o modificar esta Política de Privacidad en cualquier momento para adaptarla a nuevas funcionalidades de la Aplicación, cambios en los SDKs integrados o actualizaciones normativas de Google Play. Cualquier cambio entrará en vigor inmediatamente después de su publicación en esta misma URL, actualizando la fecha indicada en la parte superior.</p>
+
+        <h2>10. Información de Contacto</h2>
+        <p>Si tienes preguntas, comentarios, inquietudes sobre privacidad o deseas realizar alguna consulta relacionada con el tratamiento de datos en <strong>[NOMBRE DE LA APP]</strong>, puedes comunicarte directamente con el Desarrollador a través del siguiente correo electrónico:</p>
+        <p><strong>Correo de soporte y privacidad:</strong> <a href="mailto:[TU CORREO DE SOPORTE]">[TU CORREO DE SOPORTE]</a></p>
+
+        <footer>
+            &copy; 2026 TallarinDev — Todos los derechos reservados.
+        </footer>
+    </div>
+</body>
+</html>
